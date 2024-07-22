@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>295</width>
+    <height>289</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Работа 4</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>291</width>
+      <height>251</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <widget class="QWidget" name="tab1">
+     <attribute name="title">
+      <string>Решение</string>
+     </attribute>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>130</y>
+        <width>77</width>
+        <height>83</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QPushButton" name="btn">
+         <property name="text">
+          <string>Найти P</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="clear_btn">
+         <property name="text">
+          <string>Очистить</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="save_btn">
+         <property name="text">
+          <string>Сохранить</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>-1</x>
+        <y>0</y>
+        <width>281</width>
+        <height>126</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QGroupBox" name="info_box">
+         <property name="title">
+          <string>Укажите длины сторон:</string>
+         </property>
+         <layout class="QFormLayout" name="formLayout_2">
+          <item row="0" column="0">
+           <widget class="QLabel" name="lbl_info_a">
+            <property name="text">
+             <string>Сторона1=</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLineEdit" name="ed_a"/>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="lbl_info_b">
+            <property name="text">
+             <string>Сторона2=</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLineEdit" name="ed_b"/>
+          </item>
+          <item row="2" column="1">
+           <widget class="QLineEdit" name="ed_c"/>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="lbl_info_c">
+            <property name="text">
+             <string>Сторона3=</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="figure_box">
+         <property name="title">
+          <string>Выберите фигуру:</string>
+         </property>
+         <widget class="QWidget" name="layoutWidget">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>20</y>
+            <width>114</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="figure_vbox">
+           <item>
+            <widget class="QComboBox" name="figure_combo">
+             <item>
+              <property name="text">
+               <string>Треугольник</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Прямоугольник</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>История</string>
+     </attribute>
+     <widget class="QWidget" name="">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>281</width>
+        <height>221</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QTextEdit" name="textEdit"/>
+       </item>
+       <item>
+        <widget class="QPushButton" name="clear_hist_btn">
+         <property name="text">
+          <string>Очистить</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>295</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="file">
+    <property name="title">
+     <string>Файл</string>
+    </property>
+    <addaction name="openButton"/>
+    <addaction name="exitButton"/>
+   </widget>
+   <widget class="QMenu" name="reference">
+    <property name="title">
+     <string>Справка</string>
+    </property>
+    <addaction name="programButton"/>
+    <addaction name="authorButton"/>
+   </widget>
+   <widget class="QMenu" name="settings">
+    <property name="title">
+     <string>Настройки</string>
+    </property>
+    <addaction name="open2Button"/>
+   </widget>
+   <addaction name="file"/>
+   <addaction name="reference"/>
+   <addaction name="settings"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="openButton">
+   <property name="text">
+    <string>Открыть...</string>
+   </property>
+  </action>
+  <action name="exitButton">
+   <property name="text">
+    <string>Выход</string>
+   </property>
+  </action>
+  <action name="programButton">
+   <property name="text">
+    <string>О программе</string>
+   </property>
+  </action>
+  <action name="authorButton">
+   <property name="text">
+    <string>Об авторе</string>
+   </property>
+  </action>
+  <action name="open2Button">
+   <property name="text">
+    <string>Открыть</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
